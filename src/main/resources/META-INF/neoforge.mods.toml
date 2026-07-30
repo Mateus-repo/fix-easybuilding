@@ -22,6 +22,9 @@ versionRange="[1.21.1,1.21.2)"
 ordering="NONE"
 side="CLIENT"
 
+[[mixins]]
+config="fix-easybuilding.mixins.json"
+
 [[dependencies.fix_easybuilding]]
 modId="easybuilding"
 type="required"

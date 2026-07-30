@@ -8,8 +8,8 @@ import net.minecraft.client.Minecraft;
 
 @Mixin(targets = "marum.easybuilding.EasyBuildingClient")
 public class EasyBuildingClientMixin {
-    @Inject(method = "onClientTick", at = @At("HEAD"), cancellable = true, remap = false)
-    private void onClientTick(CallbackInfo ci) {
+    @Inject(method = "onClientTick(Lnet/neoforged/neoforge/client/event/ClientTickEvent$Post;)V", at = @At("HEAD"), cancellable = true, remap = false)
+    private static void onClientTick(CallbackInfo ci) {
         if (Minecraft.getInstance().player == null) {
             ci.cancel();
         }
