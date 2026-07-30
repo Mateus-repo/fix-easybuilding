@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "fixeasybuilding",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "EasyBuildingClientMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
