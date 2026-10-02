@@ -1,0 +1,9 @@
+# Artefatos de build
+build/
+
+# Jars usados apenas para compilacao (baixados/copiados pelo build.ps1)
+libs/
+
+# Snapshot descompactado do upstream do Easy Building (zip baixado do GitHub).
+# O codigo de verdade esta em ../easy-building-minecraft-mod
+resources/
